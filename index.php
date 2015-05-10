@@ -12,6 +12,32 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="style.css" type="text/css" />
 		<link rel="icon" type="image/png" href="ico.png" />
+
+	<script type="text/javascript">
+
+		var map;
+		
+		function initialise(location) 
+		{
+			console.log(location);
+			var mapOptions = {
+  			center: new google.maps.LatLng(-2.5118016, 28.8540029),
+  			zoom: 8
+			};
+
+			map = new google.maps.Map(document.getElementById("map-canvas"),
+				mapOptions);
+		}
+
+		$(document).ready(function()
+		{
+			navigator.geolocation.getCurrentPosition(initialise);
+		});
+
+
+	</script>
+	
+
 	</head>
 
 	<body>
@@ -37,7 +63,7 @@
 
 		</div>
 
-		<div id="middle">
+		<div id="map-canvas">
 					
 		</div>
 

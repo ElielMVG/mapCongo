@@ -2,10 +2,9 @@ body{
 	margin:auto;
 }
 
-#middle{
-	background-color: #E25;
+#map-canvas{
 	width: 800px;
-	height: 540px;
+	height: 500px;
 	margin:auto;
 	margin-left:0px;
 }
